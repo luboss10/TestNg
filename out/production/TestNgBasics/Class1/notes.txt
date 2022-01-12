@@ -1,0 +1,72 @@
+What's testng
+
+testing tool we use -to automate application
+
+why do we need it:
+reports
+parallel execution
+annotation based execution
+grouping
+data driven testing
+multiple options for execution
+
+@Test annotation- this is the main annotation of testing to execute our Test case
+
+it executes test cases in alphabetical order by default
+
+@before method as a precondition that executes before every test case
+@after method as a post condition that executes after every test case
+
+=================================
+User story 23456- Admin user should be able to login with valid credentials
+
+user story 384t53845-verify the title of the application
+
+======================
+priority by default is set to 0
+to prioritize the test cases we use this attribute
+
+enabled and disabled - to make any test case enabled and disabled temporarily we use this attribute
+=======================
+Assertion:
+hard assertions- we use for small execution because it stops if encounters error
+soft assertions- we use it to execute complete code with musltiple check points and in the end we use
+assertAll method to get the collective failure of the test
+
+
+
+Testng.xml where the highest level is suite-->test-->packages-->class-->methods@test
+
+groups- we use different groups to separate the test cases
+alwayrun=true-we use this attribute to execute the pre- and post-condition from testng.xml file
+
+========================================Class3===============================================
+
+@beforeclass and @afterclass- it executes before and after every class
+
+priority- we use this attribute to prioritize our test cases
+
+enable and disable- to make any test case disabled or enabled we use this attribute
+
+Assertions- we use for verification and validation
+hard -the moment it identifies error , it stops execution
+soft- it collects all failures untill the end and allows complete code to execute
+we use assertAll- method ti get collective failure from it
+
+dependson- to mention the name of depending test case in dependent test case, we use this attribute
+
+testng.xml file- configuration file - to execute all the test cases or some of the test cases in single shot
+ Batch execution is possible due to testng.xml file
+ package wise
+ method wise
+ class wise
+ group wise
+
+ smoke - test - checking the key functionalities of the application - quick testing
+
+ regression - checking the fixed module and other modules as well is regression testing
+
+
+ Data provider - it returns 2D array which we used to perform data driven testing
+
+ listener - listen all the events and provide us the details of execution according to the instructions provided
